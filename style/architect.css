@@ -29,11 +29,13 @@
   header{
     background-color: rgba(255, 144, 14, 0.10);
     /* padding: 50px 240px; */
+
   }
   nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
   }
   nav>ul{
     display: flex;
@@ -108,7 +110,7 @@ main{
   height: 240px; */
   text-align: center;
   border-radius: 8px;
-  padding:40px 30px;
+  padding:50px;
 }
 .cart-container .badge-score{
   color: #424242;
@@ -116,10 +118,38 @@ main{
   font-size: 45px;
   margin: 10px 0;
 }
+
+/* Sponsor Style */
+
+.sponsor-container{
+  text-align: center;
+}
+.sponsor-container h3{
+  margin-bottom: 0;
+}
+/* .sponsor-container p{
+  padding: 0 400px 20px 400px ;
+} */
+.sponsor-logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sponsor-logo img{
+  width: 154px;
+  height: 50px;
+  padding: 40px;
+}
+/* Footer Style */
+footer{
+  background-color: #FFF4E7;
+  text-align: center;
+  padding: 30px 0;
+}
 /* Media Query for responsiveness */
 /* Mobile device */
 @media screen and (max-width: 576px) {
-  nav, .team-container, .cart-container{
+  nav, .team-container, .cart-container, .sponsor-logo{
     flex-direction: column;
   }
   .team-container img{
@@ -141,7 +171,7 @@ main{
   .team-container img{
     width: 100%;
   }
-  .cart-container{
+  .cart-container, .sponsor-logo{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
